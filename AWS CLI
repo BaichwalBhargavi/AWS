@@ -1,0 +1,35 @@
+To use AWS CLI click on the cloudshell button in the 
+To get help regarding any service type the below command
+ $ aws <service_name> help
+e.g $ aws s3 help
+to quit used :q 
+
+To create AWS s3 buckets use the below command
+$ aws s3 mb s3://<bucket-name>
+
+got error
+Error when retrieving credentials from container-role: Error retrieving metadata: Received non 200 response 500 from container metadata: <?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>500 - Internal Server Error</title>
+ </head>
+ <body>
+  <h1>500 - Internal Server Error</h1>
+ </body>
+</html>
+
+to solve the above error run below commands:
+
+export AWS_ACCESS_KEY_ID=your_access_key
+export AWS_SECRET_ACCESS_KEY=your_secret_key
+export AWS_DEFAULT_REGION=us-east-1
+$ aws s3 mb s3://<bucket-name>
+this should resolve the issue
+
+To create a data lake we need to have buckets for various zones
+ $aws s3 mb s3://dataeng-landing-zone-gse23
+ $ aws s3 mb s3://dataeng-clean-zone-gse23
+ $ aws s3 mb s3://dataeng-curated-zone-gse23
+
