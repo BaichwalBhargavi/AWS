@@ -1,4 +1,4 @@
-Creating a simple Lambda function which the size of the image uploaded in S3 bucket and creates an alert if the size of the image is more than 100 MB.
+Creating a simple Lambda function which the size of the image uploaded in S3 bucket and creates an alert if the size of the image is more than 10 MB.
 To achieve this we would be following the below steps.
 1. Create a new S3 bucket with name image-size-checker
 2. Create a new IAM role which has access to both S3 and Amazon cloudwatch
