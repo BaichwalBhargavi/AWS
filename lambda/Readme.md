@@ -6,6 +6,8 @@ To achieve this we would be following the below steps.
 4. Upload various images with varying sizes and check for the logs on cloudwatch
 
 Below is the result when the file exceeds 10 MB
+
+
 ![image](https://github.com/user-attachments/assets/aafa6fde-4d82-4864-982c-b879a78a7912)
-![image](https://github.com/user-attachments/assets/aafa6fde-4d82-4864-982c-b879a78a7912)
+
 
